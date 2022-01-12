@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Site de Viagens 2</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+</head>
+<body>
+	<section>
+		<header>
+		  <a href="#" class="logo">MFV Turismo - Búzios</a>
+		  <div class="toggle" onclick="menuToggle();"></div>
+	    </header>
+	    <div class="glass"></div>
+	    <div class="content">
+	    	<h2>Felicidade é...<br><span>Aquela água cristalina que só Búzios tem!</span></h2>
+	    </div>
+	    <video src="Video/video.mp4" autoplay muted loop></video>
+	    <ul class="sci">
+	    	<li style="--i:1"><a href="#">Facebook</a> <span class="fab fa-facebook-square"></span></li>
+	    	<li style="--i:2"><a href="#">Twitter</a> <span class="fab fa-twitter-square"></span></li>
+	    	<li style="--i:3"><a href="#">Instagram</a> <span class="fab fa-instagram-square"></span></li>
+	    </ul>
+	    <ul class="navigation">
+	    	<li style="--i:1"><a href="#">Pousada</a></li>
+	    	<li style="--i:2"><a href="#">Sobre nós</a></li>
+	    	<li style="--i:3"><a href="#">Tour</a></li>
+	    	<li style="--i:4"><a href="#">Contato</a></li>
+	    </ul>
+	</section>
+	<script type="text/javascript">
+		function menuToggle(){
+			const toggleMenu = document.querySelector('.toggle');
+			const section = document.querySelector('section');
+			toggleMenu.classList.toggle('active');
+			section.classList.toggle('active');
+		}
+	</script>
+	<footer><h3><a href="#">Desenvolvido por Matheus F Valentim</a></h3></footer>
+ 
+</body>
+</html>
